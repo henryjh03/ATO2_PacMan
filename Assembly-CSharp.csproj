@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F1E4CB05-C162-C341-967B-0054FEFE0F25}</ProjectGuid>
+    <ProjectGuid>{AA78EF97-C8BA-DE3F-5C5F-B8B61251CC4E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,14 +53,17 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AI\Inky.cs" />
-    <Compile Include="Assets\Scripts\AI\Ghost.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\AI\Clyde.cs" />
-    <Compile Include="Assets\Scripts\AI\Blinky.cs" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\AI\Pinky.cs" />
     <Compile Include="Assets\Scripts\Pacman.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\AI\Clyde.cs" />
+    <Compile Include="Assets\Scripts\AI\Blinky.cs" />
+    <Compile Include="Assets\Scripts\AI\Ghost.cs" />
+    <Compile Include="Assets\Scripts\AI\Inky.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

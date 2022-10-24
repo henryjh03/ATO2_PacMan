@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ghost
+  - Pellet
+  - Power Pellet
+  - Bonus Item
+  - End Panel
   layers:
   - Default
   - TransparentFX
