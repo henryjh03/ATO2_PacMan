@@ -542,9 +542,9 @@ MonoBehaviour:
   speed: 7
   pacmanSpawn: {fileID: 120122608}
   lifeIcons:
-  - {fileID: 582615307}
-  - {fileID: 131720259}
   - {fileID: 427659787}
+  - {fileID: 131720259}
+  - {fileID: 582615307}
   deathClip: {fileID: 8300000, guid: 313803c9b0fc6084aa2ab4d6568d67c8, type: 3}
 --- !u!136 &60855264
 CapsuleCollider:
@@ -3784,10 +3784,10 @@ MonoBehaviour:
     m_Center: {x: 0, y: 1.25, z: 1.6}
     m_Extent: {x: 2.55, y: 1.25, z: 1.15}
   endPanel: {fileID: 1071139864}
-  pelletClip: {fileID: 8300000, guid: 2fb2056153e2d09469920b783ecd6ae3, type: 3}
-  powerPelletClip: {fileID: 8300000, guid: b1fb6d6121a0cf241877f0b15123c41a, type: 3}
-  bonusItemClip: {fileID: 8300000, guid: 43287f5867b06624ba8c0322df8bb741, type: 3}
-  eatGhostClip: {fileID: 8300000, guid: e0f35528d04733f4c957d6d61583f01b, type: 3}
+  pelletClip: {fileID: 8300000, guid: 866681985ab7a244c955472ee9ea39c7, type: 3}
+  powerPelletClip: {fileID: 8300000, guid: 22079646fd1c1d7428c33576d8f511f8, type: 3}
+  bonusItemClip: {fileID: 8300000, guid: 5b08bf7c44b18a14dbe0c86cfd3ef01e, type: 3}
+  eatGhostClip: {fileID: 8300000, guid: 28bd991e8fb10114eac2b0ae91797937, type: 3}
 --- !u!4 &392079696
 Transform:
   m_ObjectHideFlags: 0
