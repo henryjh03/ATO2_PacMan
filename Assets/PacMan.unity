@@ -3886,7 +3886,11 @@ MonoBehaviour:
   - {fileID: 1939211139}
   Flee: {fileID: 2100000, guid: 96a291c753a7f2c45b3e87640fbf89c3, type: 2}
   Respawn: {fileID: 2100000, guid: 03c3b4c1759f0c84bb70bccff08c2627, type: 2}
-  Normal: {fileID: -9103484930961366303, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+  Normal:
+  - {fileID: 2100000, guid: b8c1e4b896cc16742a17051dda40ae60, type: 2}
+  - {fileID: 2100000, guid: 0afbcbb9aa94dfc4e94623692467b9f5, type: 2}
+  - {fileID: 2100000, guid: 2bedfaf6b429e804885425d9e1767137, type: 2}
+  - {fileID: 2100000, guid: 279d7aeab374f25458dc5109247bf2b6, type: 2}
 --- !u!4 &392079696
 Transform:
   m_ObjectHideFlags: 0
@@ -9318,7 +9322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 26.059387, y: -17.875183}
+  m_AnchoredPosition: {x: 26.059326, y: -17.875183}
   m_SizeDelta: {x: 216.1, y: 69.5}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &974576074
@@ -14459,6 +14463,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -9103484930961366303, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
+    - target: {fileID: -7511558181221131132, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -716107907864680967, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
     - target: {fileID: -7511558181221131132, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 

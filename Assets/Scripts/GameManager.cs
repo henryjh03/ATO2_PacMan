@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] ghosts;
     public Material Flee;
     public Material Respawn;
-    public Material Normal;
+    public Material[] Normal;
 
     private void Awake()
     {
@@ -137,8 +137,10 @@ public class GameManager : MonoBehaviour
                 //get array of ghosts
                 for (int i=0; i < ghosts.Length; i++)
                 {
-                    ghosts[i].GetComponent<Renderer>().material = Normal;
-
+                    Material[] temp = ghosts[i].GetComponent<Renderer>().materials;
+                    temp[2] = Normal[i];
+                    ghosts[i].GetComponent<Renderer>().materials = temp;
+           
                 }
                 Event_EndPowerUp.Invoke();
                 PowerUpTimer = -1;
@@ -180,7 +182,9 @@ public class GameManager : MonoBehaviour
             //get array of ghosts
             for(int i = 0; i < ghosts.Length;i++)
             {
-                ghosts[i].GetComponent<Renderer>().material = Flee;
+                Material[] temp = ghosts[i].GetComponent<Renderer>().materials;
+                temp[2] = Flee;
+                ghosts[i].GetComponent<Renderer>().materials = temp;
                 
             }//cycle through changing each material
         }
@@ -243,6 +247,14 @@ public class GameManager : MonoBehaviour
         aSrc.PlayOneShot(eatGhostClip);
         //Respawn
         ghost.SetState(ghost.RespawnState);
+
+        for (int i = 0; i < ghosts.Length; i++)
+        {
+            Material[] temp = ghosts[i].GetComponent<Renderer>().materials;
+            temp[2] = Respawn;
+            ghosts[i].GetComponent<Renderer>().materials = temp; 
+
+        }
     }
 
     /// <summary>
