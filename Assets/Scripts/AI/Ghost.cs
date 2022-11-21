@@ -8,11 +8,12 @@ public abstract class Ghost : MonoBehaviour
     //Serialized variables
     [SerializeField] private Material fleeMaterial;
     [SerializeField] private Material respawnMaterial;
+     public Material defaultMaterial;
 
     //Auto-properties
     public Pacman Target { get; private set; }
     public NavMeshAgent Agent { get; private set; }
-    public MeshRenderer GhostRenderer { get; private set; }
+    public Renderer GhostMeshRenderer { get; private set; }
     public Material DefaultMaterial { get; private set; }
     public GhostState DefaultState { get; protected set; }
     public GhostState_Flee FleeState { get; private set; }
@@ -28,8 +29,8 @@ public abstract class Ghost : MonoBehaviour
         TryGetComponent(out MeshRenderer renderer);
         if (renderer != null)
         {
-            GhostRenderer = renderer;
-            DefaultMaterial = GhostRenderer.material;
+            GhostMeshRenderer = renderer;
+            DefaultMaterial = GhostMeshRenderer.material;
         }
         else
         {
@@ -170,9 +171,10 @@ public class GhostState_Idle : GhostState
 
     public override void OnEnter()
     {
-        if (Instance.GhostRenderer.material != Instance.DefaultMaterial)
+        if (Instance.GhostMeshRenderer.material != Instance.DefaultMaterial)
         {
-            Instance.GhostRenderer.material = Instance.DefaultMaterial;
+            Instance.GhostMeshRenderer.material = Instance.DefaultMaterial;
+            
         }
         Instance.Agent.isStopped = true;
     }
@@ -193,9 +195,9 @@ public class GhostState_Chase : GhostState
 
     public override void OnEnter()
     {
-        if (Instance.GhostRenderer.material != Instance.DefaultMaterial)
+        if (Instance.GhostMeshRenderer.material != Instance.DefaultMaterial)
         {
-            Instance.GhostRenderer.material = Instance.DefaultMaterial;
+            Instance.GhostMeshRenderer.material = Instance.DefaultMaterial;
         }
         if (Instance.Target != null)
         {
@@ -235,9 +237,9 @@ public class GhostState_Flank : GhostState
 
     public override void OnEnter()
     {
-        if (Instance.GhostRenderer.material != Instance.DefaultMaterial)
+        if (Instance.GhostMeshRenderer.material != Instance.DefaultMaterial)
         {
-            Instance.GhostRenderer.material = Instance.DefaultMaterial;
+            Instance.GhostMeshRenderer.material = Instance.DefaultMaterial;
         }
         if (Instance.Target != null)
         {
@@ -280,7 +282,7 @@ public class GhostState_Flee : GhostState
     {
         if (fleeMaterial != null)
         {
-            Instance.GhostRenderer.material = fleeMaterial;
+            Instance.GhostMeshRenderer.material = fleeMaterial;
         }
         else
         {
@@ -339,7 +341,7 @@ public class GhostState_Respawn : GhostState
     {
         if (respawnMaterial != null)
         {
-            Instance.GhostRenderer.material = respawnMaterial;
+            Instance.GhostMeshRenderer.material = respawnMaterial;
         }
         else
         {

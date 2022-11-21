@@ -802,6 +802,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -9103484930961366303, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+    - target: {fileID: -7511558181221131132, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -716107907864680967, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+    - target: {fileID: -7511558181221131132, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 0afbcbb9aa94dfc4e94623692467b9f5, type: 2}
@@ -1941,6 +1949,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
   m_PrefabInstance: {fileID: 62580205}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &260556894 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+  m_PrefabInstance: {fileID: 62580205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &261811267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fleeMaterial: {fileID: 2100000, guid: 96a291c753a7f2c45b3e87640fbf89c3, type: 2}
   respawnMaterial: {fileID: 2100000, guid: 03c3b4c1759f0c84bb70bccff08c2627, type: 2}
+  defaultMaterial: {fileID: -9103484930961366303, guid: 99193023b1983464682f7295bb58f01b, type: 3}
+  GhostRenderer: {fileID: 1939211140}
   offset: {x: 0, y: 0, z: 0}
 --- !u!136 &297340429
 CapsuleCollider:
@@ -3030,6 +3045,11 @@ MeshFilter:
 --- !u!1 &329096715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
+  m_PrefabInstance: {fileID: 636781431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &329096716 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
   m_PrefabInstance: {fileID: 636781431}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &331436267
@@ -3737,6 +3757,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fleeMaterial: {fileID: 2100000, guid: 96a291c753a7f2c45b3e87640fbf89c3, type: 2}
   respawnMaterial: {fileID: 2100000, guid: 03c3b4c1759f0c84bb70bccff08c2627, type: 2}
+  defaultMaterial: {fileID: -9103484930961366303, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
+  GhostRenderer: {fileID: 1938230613}
 --- !u!136 &390337065
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5831,6 +5853,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -9103484930961366303, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
+    - target: {fileID: -7511558181221131132, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -716107907864680967, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
     - target: {fileID: -7511558181221131132, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -8619,6 +8649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fleeMaterial: {fileID: 2100000, guid: 96a291c753a7f2c45b3e87640fbf89c3, type: 2}
   respawnMaterial: {fileID: 2100000, guid: 03c3b4c1759f0c84bb70bccff08c2627, type: 2}
+  defaultMaterial: {fileID: -9103484930961366303, guid: cfe845ccf25dd294e818e1559b1e786a, type: 3}
+  GhostRenderer: {fileID: 329096716}
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &881143349
 GameObject:
@@ -10959,6 +10991,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 99193023b1983464682f7295bb58f01b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -9103484930961366303, guid: 99193023b1983464682f7295bb58f01b, type: 3}
+    - target: {fileID: -7511558181221131132, guid: 99193023b1983464682f7295bb58f01b, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -716107907864680967, guid: 99193023b1983464682f7295bb58f01b, type: 3}
     - target: {fileID: -7511558181221131132, guid: 99193023b1983464682f7295bb58f01b, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -16273,9 +16313,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
   m_PrefabInstance: {fileID: 1675820700}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1938230613 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 1f6993d4a0bcf6d47b34b54159194d8a, type: 3}
+  m_PrefabInstance: {fileID: 1675820700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1939211139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 99193023b1983464682f7295bb58f01b, type: 3}
+  m_PrefabInstance: {fileID: 1072754442}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1939211140 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 99193023b1983464682f7295bb58f01b, type: 3}
   m_PrefabInstance: {fileID: 1072754442}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1944868231
@@ -17308,6 +17358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fleeMaterial: {fileID: 2100000, guid: 96a291c753a7f2c45b3e87640fbf89c3, type: 2}
   respawnMaterial: {fileID: 2100000, guid: 03c3b4c1759f0c84bb70bccff08c2627, type: 2}
+  defaultMaterial: {fileID: -9103484930961366303, guid: d978b0378b403fc4999ed8f4a9ec0153, type: 3}
+  GhostRenderer: {fileID: 260556894}
   behaviourSwitchTime: {x: 5, y: 30}
 --- !u!1 &2008394213
 GameObject:
