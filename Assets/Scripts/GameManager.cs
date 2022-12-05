@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     //Serialized variables
     [SerializeField] private float powerUpTime = 10;
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text remainingPelletsText;
     [SerializeField] private Transform bonusItemSpawn;
     [SerializeField] private Bounds ghostSpawnBounds;
     [SerializeField] private GameObject losePanel;
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     //Private variables
     private GameObject bonusItem;
     private int totalPellets = 0;
+    private int remainingPellets = 0;
     private int score = 0;
     private int collectedPellets = 0;
     private AudioSource aSrc;
@@ -87,7 +89,10 @@ public class GameManager : MonoBehaviour
     /// Set initial game state.
     /// </summary>
     private void Start()
-    {        
+    {
+        //Assigns the number of remaining pellets to the total pellets
+        remainingPellets = totalPellets;
+
         //Assign delegates/events
         Event_GameVictory += ToggleVictoryPanel;
         Delegate_GameOver += ToggleLosePanel;
@@ -168,7 +173,24 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Game Manager: Score Text has not been assigned!");
         }
 
-        if(type == 0)
+        //How many remaining pellets
+        //Does not count bonus item to remaining pellets count
+        if (type != 2) 
+        { 
+            remainingPellets--; 
+        } 
+        //Show how man pellets left
+        if (remainingPelletsText != null)
+        {
+            remainingPelletsText.text = $"RemainingPellets: {remainingPellets}";
+        }
+        else
+        {
+            Debug.LogError("Game Manager: Remaining pellets text has not been assinged.");
+        }
+
+
+        if (type == 0)
         {
             aSrc.PlayOneShot(pelletClip);
         }
@@ -270,6 +292,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void QuitToDesktop()
     {
+        Debug.Log("Quitting");
         Application.Quit();
     }
 
@@ -308,4 +331,6 @@ public class GameManager : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(ghostSpawnBounds.center, ghostSpawnBounds.size);
     }
+
 }
+

@@ -14,3 +14,4 @@ public class MinimapScript : MonoBehaviour
         transform.position = newPosition;
     }
 }
+
